@@ -1,0 +1,6 @@
+.vscode/
+.idea/
+.env
+go.sum
+__debug*
+storage/

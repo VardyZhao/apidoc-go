@@ -1,0 +1,27 @@
+app:
+  name: app
+  environment: local
+  debug: on
+  mode: debug
+  version: 1.0.0
+server:
+  port: 19999
+log:
+  path: storage/logs
+  max_size: 10
+  max_backups: 5
+  max_age: 30
+  compress: true
+database:
+  - name: default
+    driver: mysql
+    host: 127.0.0.1
+    port: 3336
+    dbname: test
+    username: root
+    password: root
+    migrate: true
+    charset: utf8mb4
+    max_open: 10
+    max_idle: 3
+    max_life: 600
